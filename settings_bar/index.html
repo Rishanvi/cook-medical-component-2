@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Dropdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="settings-container">
+        <button class="settings-icon" onclick="toggleDropdown('settingsDropdown')">&#9881;</button>
+        <div id="settingsDropdown" class="dropdown-content">
+            <a href="#" class="nested-dropdown" onclick="toggleNestedDropdown('queryTranslationDropdown')">Query Translation &#x25BC;</a>
+            <div id="queryTranslationDropdown" class="dropdown-content nested">
+                <a href="#">Multi Query</a>
+                <a href="#">RAG-fusion</a>
+                <a href="#">Decomposition</a>
+                <a href="#">Stepback</a>
+                <a href="#">HYDE</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
